@@ -153,7 +153,7 @@ PlotData =
 ! scope="col" class="unsortable" | Programme
 ! scope="col" class="unsortable" | Réf.
 |-
-| {{Date-|2021}} || [[Saint-Cloud]] || 95{{e}} [[Concours international Léopold Bellan]] || Trio Ilargia (violon, violoncelle, piano) || Deuxième prix de musique de chambre || <ref name="bellan2021" />
+| {{Date-|2021}} || En ligne || 95{{e}} [[Concours international Léopold Bellan]] (édition en ligne) || Trio Ilargia (violon, violoncelle, piano) || Deuxième prix de musique de chambre || <ref name="bellan2021" />
 |-
 | {{Date-|10 octobre 2021}} || [[Plan-les-Ouates]], Maison des arts et de la culture || Tremplin JazzContreBand || Nicolas Ziliotto Trio & String Quartet || Premier prix du tremplin || <ref name="jazzmag2021" />
 |-

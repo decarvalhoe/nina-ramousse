@@ -207,7 +207,7 @@ Merlin Breij (guitare, composition), Lenni Torgue (marimba, vibraphone, tam-tam)
 <ref name="rts2022">{{Lien web |auteur=Benoît Perrier |titre=Des Masters sur les ondes 2/5 |url=https://www.rts.ch/audio-podcast/2022/audio/des-masters-sur-les-ondes-2-5-25799788.html |site=rts.ch |éditeur=Radio télévision suisse, Espace 2 |date=8 février 2022 |consulté le=17 octobre 2026}}.</ref>
 <ref name="jazzmag2021">{{Lien web |titre=Nicolas Ziliotto remporte le Tremplin JazzContreBand |url=https://www.jazzmagazine.com/jazzlive/nicolas-ziliotto-remporte-le-tremplin-jazzcontreband/ |site=jazzmagazine.com |éditeur=[[Jazz Magazine]] |date=13 octobre 2021 |consulté le=17 octobre 2026}}.</ref>
 <ref name="spotify">{{Lien web |titre=Inner Chants – Nicolas Ziliotto |url=https://open.spotify.com/album/3EPbMFVDRY4KFgFhlRUV8H |site=open.spotify.com |date=28 avril 2022 |consulté le=17 octobre 2026}}.</ref>
-<ref name="cnsmd">{{Lien web |titre=Artist Diploma Konzertmeister |url=https://cnsmd-lyon.fr/?p=5548 |site=cnsmd-lyon.fr |éditeur=Conservatoire national supérieur de musique et de danse de Lyon |consulté le=17 octobre 2026}}.</ref>
+<!-- Référence à réactiver avec le paragraphe CNSMD : <ref name="cnsmd">{{Lien web |titre=Artist Diploma Konzertmeister |url=https://cnsmd-lyon.fr/?p=5548 |site=cnsmd-lyon.fr |éditeur=Conservatoire national supérieur de musique et de danse de Lyon |consulté le=17 octobre 2026}}.</ref> -->
 }}
 
 == Voir aussi ==

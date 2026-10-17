@@ -6,3 +6,8 @@ Biographie de Nina Ramousse Fuchs, violoniste.
 - PDF : https://decarvalhoe.github.io/nina-ramousse/Biographie_Nina_Ramousse_Fuchs.pdf
 
 `index.html` est la source ; le PDF est généré à partir de celle-ci (format A4, une page).
+
+## Wikipédia
+
+- `wikipedia/brouillon.wiki` — version pour l'espace utilisateur (catégories/portails désactivés), publiée sur [Utilisateur:Eric DCa/Nina Ramousse Fuchs](https://fr.wikipedia.org/wiki/Utilisateur:Eric_DCa/Nina_Ramousse_Fuchs).
+- `wikipedia/article.wiki` — même texte, catégories/portails actifs, pour le passage en espace principal après relecture.

@@ -1,0 +1,232 @@
+{{Brouillon}}
+<!-- =====================================================================
+BROUILLON — article Wikipédia en français
+Titre proposé : Nina Ramousse Fuchs
+Redirections à créer : Nina Ramousse ; Nina Ramousse-Fuchs
+
+À LIRE AVANT PUBLICATION
+1. Admissibilité (WP:NMUS) : les sources actuelles (palmarès officiels,
+   RTS Espace 2, HEMU, Jazz Magazine) vérifient les faits ; seules la RTS
+   et Jazz Magazine sont des médias d'envergure, et aucun n'est un article
+   de fond centré sur elle. Il manque encore ≥ 2 articles de ce type,
+   espacés de 2 ans, pour une admissibilité solide.
+2. Conflit d'intérêts : déclarer le lien sur la page utilisateur
+   ({{Utilisateur conflit d'intérêts}}) et passer par un brouillon soumis
+   au Forum des nouveaux / WP:Relecture.
+3. Images et audio : uniquement des fichiers téléversés sur Wikimedia
+   Commons sous licence libre (CC BY-SA 4.0) par l'auteur des droits
+   (photographe, musiciens). Les noms de fichiers ci-dessous sont des
+   emplacements à remplacer ; tant qu'ils n'existent pas, laisser les
+   lignes en commentaire.
+4. Les passages « À SOURCER » sont à compléter ou retirer.
+===================================================================== -->
+{{Infobox Musique classique (personnalité)
+ | charte               = instrumentiste
+ | nom                  = Nina Ramousse Fuchs
+ | image                = <!-- Nina Ramousse Fuchs 2025.jpg -->
+ | légende              = <!-- Nina Ramousse Fuchs en 2025. -->
+ | nom de naissance     =
+ | date de naissance    = [[1998 en musique classique|1998]]
+ | lieu de naissance    =
+ | activité principale  = [[Violoniste]]
+ | style                = [[Musique classique]], [[musique de chambre]], [[jazz]]
+ | lieux d'activité     = [[Lausanne]]
+ | années actives       = depuis [[2018 en musique classique|2018]]
+ | formation            = [[Conservatoire à rayonnement régional de Strasbourg]]<br />[[Haute École de musique de Lausanne]]
+ | maîtres              = [[Renaud Capuçon]], François Sochard
+ | récompenses          = Second prix du [[Concours international Léopold Bellan]] (2021, 2024)
+ | site web             = [https://decarvalhoe.github.io/nina-ramousse/ Site officiel]
+}}
+
+'''Nina Ramousse Fuchs''', également connue sous le nom de '''Nina Ramousse''', née en [[1998]], est une [[violoniste]] [[France|française]] établie en [[Suisse]]. Formée à [[Strasbourg]] puis à la [[Haute École de musique de Lausanne]] auprès de [[Renaud Capuçon]] et François Sochard, elle se produit au sein d'orchestres suisses, en [[musique de chambre]] avec le duo Suonamare — second prix du [[Concours international Léopold Bellan]] en 2024, après un premier second prix en trio en 2021 — et dans des ensembles de [[jazz]] romands, dont le Nicolas Ziliotto Trio & String Quartet, lauréat du Tremplin JazzContreBand 2021.
+
+== Biographie ==
+
+=== Formation ===
+Nina Ramousse Fuchs naît en 1998 dans une famille de musiciens et commence le [[violon]] à l'âge de quatre ans selon la [[méthode Suzuki]]<ref name="wemp2025" />. Elle étudie au [[Conservatoire à rayonnement régional de Strasbourg]], où elle obtient son [[diplôme d'études musicales]] en 2016<ref name="wemp2025" />.
+
+À partir de 2018, elle poursuit pendant cinq ans sa formation à la [[Haute École de musique de Lausanne]] (HEMU) dans les classes de [[Renaud Capuçon]] et de François Sochard, où elle suit notamment un master de musicien d'orchestre<ref name="wemp2025" /><ref name="hemu2022" />.
+
+<!-- À SOURCER : depuis septembre 2026, Artist Diploma « violon solo » (Konzertmeister)
+du [[Conservatoire national supérieur de musique et de danse de Lyon]], cursus d'un an
+en partenariat avec l'[[Orchestre national d'Auvergne]], classe de Marc Danel ;
+concert en soliste prévu en avril 2027. Le cursus est décrit sur le site du CNSMD
+(réf. « cnsmd ») mais l'inscription de l'artiste doit être attestée par une source publiée. -->
+
+=== Carrière ===
+
+==== Orchestre ====
+Elle effectue un stage d'orchestre à l'[[Orchestre symphonique de Bâle]] lors de la saison 2021-2022 et joue comme violoniste supplémentaire à l'[[Orchestre de chambre de Lausanne]]<ref name="wemp2025" />, dont elle figure au pupitre des seconds violons lors des concerts des 5 et 6 avril 2023 dirigés par Kristiina Poska, avec [[Alban Gerhardt]] en soliste<ref name="ocl2023" />.
+
+==== Musique de chambre ====
+Pendant ses études, elle fonde avec la pianiste Pilar Benavides Campini le duo Suonamare, consacré au répertoire de la [[sonate pour violon et piano]]<ref name="wemp2025" />. En novembre 2024, le duo obtient le second prix de musique de chambre du 98{{e}} [[Concours international Léopold Bellan]] à [[Saint-Cloud]], assorti d'une mention spéciale pour son interprétation de la sonate de [[César Franck|Franck]] ; la violoniste reçoit en outre une invitation à la masterclass de Dora Schwarzberg à [[Vienne (Autriche)|Vienne]]<ref name="bellan2024" />. Auparavant, au sein du trio Ilargia avec la pianiste Manon Édouard-Dourioud et la violoncelliste Maiana Lavielle, elle avait déjà obtenu un deuxième prix de musique de chambre dans le même concours en 2021<ref name="bellan2021" /><ref name="wemp2025" />.
+
+Le 8 février 2022, dans le cadre de la série ''Des Masters sur les ondes'' organisée par la HEMU en partenariat avec [[Espace 2]], le duo donne à Lausanne un concert diffusé en direct sur l'antenne de la [[Radio télévision suisse|RTS]], consacré aux sonates pour violon et piano de [[César Franck]] et de [[Guillaume Lekeu]]<ref name="hemu2022b" /><ref name="rts2022" />.
+
+<!-- {{Multimédia
+ | fichier = Suonamare - Franck sonate - 4e mouvement (extrait).ogg
+ | titre   = Sonate de Franck, ''Allegretto poco mosso'' (extrait)
+ | description = Duo Suonamare, 2024. Fichier à téléverser sur Commons sous CC BY-SA 4.0 par les interprètes.
+}} -->
+
+Le duo Suonamare est programmé à la 22{{e}} Schubertiade [[Radio télévision suisse|RTS]] [[Espace 2]] de [[Sion]], les 6 et 7 septembre 2025, dans un programme réunissant [[Pablo Casals|Casals]], de Abreu, Gutiérrez, Ochoa, [[Franz Schubert|Schubert]] et [[Heinrich Wilhelm Ernst|Ernst]]<ref name="schubertiade2025" /><ref name="rts2025" />. Depuis 2023, le duo collabore avec les Concerts du Cœur fribourgeois, association qui organise des concerts dans les établissements médico-sociaux et hospitaliers<ref name="wemp2025" />.
+
+En mai 2025, elle participe au Week-End Musical de Pully au sein d'un ensemble à cordes et clarinette emmené par Samuel Hirsch<ref name="wemp2025" />.
+
+==== Jazz ====
+Parallèlement au répertoire classique, Nina Ramousse Fuchs joue avec des formations de jazz lausannoises, dont le Nicolas Ziliotto Trio and Strings et le Merlin Breij Group, avec lesquelles elle enregistre les albums ''Inner Chants'' et ''Impulsions'', et se produit notamment au [[Cully Jazz Festival]]<ref name="wemp2025" />. Le 10 octobre 2021, le Nicolas Ziliotto Trio & String Quartet, dont elle tient le violon, remporte le Tremplin JazzContreBand à [[Plan-les-Ouates]]<ref name="jazzmag2021" />{{,}}<ref group="n">L'article de ''Jazz Magazine'' la désigne sous le nom de « Nina Fuchs » ; la HEMU et la RTS utilisent à la même époque la forme « Nina Fuchs Ramousse ».</ref>. L'album ''Inner Chants'' paraît en avril 2022<ref name="spotify" />. Sur ''Impulsions'', suite en quatre mouvements du guitariste et compositeur Merlin Breij parue chez Unit Records en 2022, elle tient la partie de premier violon<ref name="hemu2022" /><ref name="bandcamp" />.
+
+== Chronologie ==
+<!-- Frise EasyTimeline : uniquement des dates sourcées. Ajouter la barre CNSMD (2026-2027) une fois sourcée. -->
+<timeline>
+ImageSize  = width:820 height:auto barincrement:24
+PlotArea   = left:150 right:30 top:10 bottom:60
+DateFormat = yyyy
+Period     = from:2002 till:2027
+TimeAxis   = orientation:horizontal
+ScaleMajor = unit:year increment:2 start:2002
+AlignBars  = justify
+
+Colors =
+  id:form  value:rgb(0.84,0.76,0.58) legend:Formation
+  id:orch  value:rgb(0.56,0.70,0.84) legend:Orchestre
+  id:cham  value:rgb(0.66,0.82,0.60) legend:Musique_de_chambre
+  id:jazz  value:rgb(0.90,0.62,0.52) legend:Jazz
+  id:grid  value:gray(0.85)
+
+Legend = orientation:horizontal position:bottom
+ScaleMinor = unit:year increment:1 start:2002 gridcolor:grid
+
+BarData =
+  bar:strasbourg text:"Strasbourg (violon, CRR)"
+  bar:hemu       text:"HEMU Lausanne"
+  bar:bale       text:"Orchestre symph. de Bâle"
+  bar:ilargia    text:"Trio Ilargia (Bellan)"
+  bar:tremplin   text:"Tremplin JazzContreBand"
+  bar:masters    text:"Masters sur les ondes (RTS)"
+  bar:ocl        text:"Orchestre de ch. de Lausanne"
+  bar:impulsions text:"Album ''Impulsions''"
+  bar:bellan     text:"Concours Léopold Bellan"
+  bar:schub      text:"Schubertiade de Sion"
+
+PlotData =
+  width:14 textcolor:black align:left fontsize:S shift:(4,-5)
+  bar:strasbourg from:2002 till:2016 color:form text:"DEM 2016"
+  bar:hemu       from:2018 till:2023 color:form
+  bar:bale       from:2021 till:2022 color:orch text:"stage"
+  bar:ilargia    at:2021 mark:(line,cham) color:cham text:"2e prix"
+  bar:tremplin   at:2021 mark:(line,jazz) color:jazz text:"1er prix"
+  bar:masters    at:2022 mark:(line,cham) color:cham text:"Franck, Lekeu"
+  bar:ocl        at:2023 mark:(line,orch) color:orch text:"2023"
+  bar:impulsions at:2022 mark:(line,jazz) color:jazz text:"2022"
+  bar:bellan     at:2024 mark:(line,cham) color:cham text:"2e prix"
+  bar:schub      at:2025 mark:(line,cham) color:cham text:"Sion"
+</timeline>
+
+== Lieux de formation et de concert ==
+<!-- Carte interactive Kartographer : cliquer sur un point ouvre sa fiche. -->
+<mapframe text="Principaux lieux du parcours de Nina Ramousse Fuchs (cliquer sur les points)." width="full" height="360" zoom="6" latitude="47.2" longitude="5.9" align="center">
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[7.7521,48.5734]},"properties":{"title":"Strasbourg","description":"Conservatoire à rayonnement régional — diplôme d'études musicales, 2016.","marker-symbol":"music","marker-color":"#8a7a5c"}},
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[6.6323,46.5197]},"properties":{"title":"Lausanne","description":"Haute École de musique (2018-2023) ; Orchestre de chambre de Lausanne ; scène jazz lausannoise.","marker-symbol":"music","marker-color":"#8a7a5c"}},
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[7.5886,47.5596]},"properties":{"title":"Bâle","description":"Stage à l'Orchestre symphonique de Bâle, saison 2021-2022.","marker-symbol":"music","marker-color":"#5b8fb9"}},
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[7.3606,46.2333]},"properties":{"title":"Sion","description":"22e Schubertiade RTS Espace 2, 6-7 septembre 2025, duo Suonamare.","marker-symbol":"star","marker-color":"#6fa865"}},
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[2.2186,48.8440]},"properties":{"title":"Saint-Cloud","description":"98e Concours international Léopold Bellan, novembre 2024 — second prix de musique de chambre.","marker-symbol":"star","marker-color":"#6fa865"}},
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[6.6618,46.5103]},"properties":{"title":"Pully","description":"Week-End Musical de Pully, mai 2025.","marker-symbol":"music","marker-color":"#6fa865"}},
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[7.1620,46.8065]},"properties":{"title":"Fribourg","description":"Concerts du Cœur fribourgeois, depuis 2023.","marker-symbol":"heart","marker-color":"#6fa865"}},
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[6.7294,46.4886]},"properties":{"title":"Cully","description":"Cully Jazz Festival.","marker-symbol":"music","marker-color":"#d98a74"}},
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[6.1167,46.1667]},"properties":{"title":"Plan-les-Ouates","description":"Tremplin JazzContreBand 2021, remporté avec le Nicolas Ziliotto Trio & String Quartet.","marker-symbol":"star","marker-color":"#d98a74"}}
+  ]
+}
+</mapframe>
+<!-- À SOURCER puis ajouter : Lyon [4.8357,45.7640] (CNSMD, 2026-2027) et Clermont-Ferrand [3.0870,45.7772] (Orchestre national d'Auvergne, soliste avril 2027). -->
+
+== Principales apparitions ==
+{| class="wikitable sortable centre" style="font-size:95%"
+|+ Sélection d'apparitions publiques documentées
+! scope="col" data-sort-type="date" | Date
+! scope="col" | Lieu
+! scope="col" | Cadre
+! scope="col" | Formation
+! scope="col" class="unsortable" | Programme
+! scope="col" class="unsortable" | Réf.
+|-
+| {{Date-|2021}} || [[Saint-Cloud]] || 95{{e}} [[Concours international Léopold Bellan]] || Trio Ilargia (violon, violoncelle, piano) || Deuxième prix de musique de chambre || <ref name="bellan2021" />
+|-
+| {{Date-|10 octobre 2021}} || [[Plan-les-Ouates]], Maison des arts et de la culture || Tremplin JazzContreBand || Nicolas Ziliotto Trio & String Quartet || Premier prix du tremplin || <ref name="jazzmag2021" />
+|-
+| {{Date-|8 février 2022}} || [[Lausanne]], HEMU (Utopia 1) || ''Des Masters sur les ondes'', en direct sur [[Espace 2]] || Duo Suonamare || [[César Franck|Franck]], Sonate ; [[Guillaume Lekeu|Lekeu]], Sonate || <ref name="hemu2022b" /><ref name="rts2022" />
+|-
+| {{Date-|2022}} || — || Album ''Impulsions'' (Unit Records) || Merlin Breij Group — violon I || Suite en quatre mouvements et interlude, ''Ombrages'' || <ref name="hemu2022" />
+|-
+| {{Date-|5 avril 2023}} || [[Lausanne]], Salle Métropole || Les Grands Concerts de l'[[Orchestre de chambre de Lausanne]] || Seconds violons, dir. Kristiina Poska || [[Antonín Dvořák|Dvořák]], Concerto pour violoncelle ; [[Dmitri Chostakovitch|Chostakovitch]], Symphonie {{n°|5}} || <ref name="ocl2023" />
+|-
+| {{Date-|2 novembre 2024}} || [[Saint-Cloud]] || 98{{e}} [[Concours international Léopold Bellan]], super-finale || Duo Suonamare || Second prix de musique de chambre ; mention spéciale pour la sonate de [[César Franck|Franck]] || <ref name="bellan2024" />
+|-
+| {{Date-|9 mai 2025}} || [[Pully]], Maison Pulliérane || Week-End Musical de Pully, ''Danza'' || Ensemble à cordes et clarinette || [[Antonio Vivaldi|Vivaldi]], [[Astor Piazzolla|Piazzolla]], [[Claude Debussy|Debussy]], [[Georges Bizet|Bizet]], [[Samuel Barber|Barber]], [[George Gershwin|Gershwin]], [[Felix Mendelssohn|Mendelssohn]], [[Johannes Brahms|Brahms]] || <ref name="wemp2025" />
+|-
+| {{Date-|6 septembre 2025}} || [[Sion]] || 22{{e}} Schubertiade [[Espace 2|RTS Espace 2]] || Duo Suonamare || [[Pablo Casals|Casals]], de Abreu, Gutiérrez, Ochoa, [[Franz Schubert|Schubert]], [[Heinrich Wilhelm Ernst|Ernst]] || <ref name="schubertiade2025" />
+|}
+
+== Distinctions ==
+* 2024 : second prix de musique de chambre du [[Concours international Léopold Bellan]] avec le duo Suonamare, mention spéciale pour la sonate de Franck ; invitation à la masterclass de Dora Schwarzberg à Vienne<ref name="bellan2024" />.
+* 2021 : deuxième prix de musique de chambre du Concours international Léopold Bellan avec le trio Ilargia<ref name="bellan2021" />.
+* 2021 : premier prix du Tremplin JazzContreBand avec le Nicolas Ziliotto Trio & String Quartet<ref name="jazzmag2021" />.
+
+== Discographie ==
+''En tant que musicienne d'ensemble :''
+{| class="wikitable" style="font-size:95%"
+! scope="col" | Année !! scope="col" | Titre !! scope="col" | Artiste !! scope="col" | Label !! scope="col" | Rôle !! scope="col" | Réf.
+|-
+| 2022 || ''Impulsions'' || Merlin Breij Group || Unit Records || Violon I || <ref name="hemu2022" /><ref name="bandcamp" />
+|-
+| 2022 || ''Inner Chants'' || Nicolas Ziliotto || — || Violon || <ref name="wemp2025" /><ref name="spotify" /><!-- label à préciser -->
+|}
+
+{{Boîte déroulante début|titre=Musiciens de l'album ''Impulsions'' (2022)}}
+Merlin Breij (guitare, composition), Lenni Torgue (marimba, vibraphone, tam-tam), Alice Emery (harpe), Nina Ramousse-Fuchs (violon I), Marie Sophie Baumgartner (violon II), Madalin Noël (alto), Sarah Fouchenneret (violoncelle), Yves Marcotte (contrebasse), Fabien Ghirotto (batterie)<ref name="hemu2022" />.
+{{Boîte déroulante fin}}
+
+== Notes et références ==
+=== Notes ===
+{{Références|groupe=n}}
+
+=== Références ===
+{{Références|taille=30|références=
+<ref name="wemp2025">{{Lien web |titre=DANZA – WEMP 2025 |url=https://www.wempully.ch/events/2025-danza/ |site=wempully.ch |éditeur=Week-End Musical de Pully |date=9 mai 2025 |consulté le=17 octobre 2026}}.</ref>
+<ref name="hemu2022">{{Lien web |titre=Impulsions |url=https://www.hemu.ch/lhemu/actualites/detail-des-actualites/news/detail/news/impulsions |site=hemu.ch |éditeur=Haute École de musique de Lausanne |date=20 octobre 2022 |consulté le=17 octobre 2026}}.</ref>
+<ref name="ocl2023">{{Lien web |titre=Les Grands Concerts – GC7 : Dvořák, Chostakovitch |url=https://www.ocl.ch/wp-content/uploads/2023/03/Prog_GC7.pdf |format=pdf |site=ocl.ch |éditeur=Orchestre de chambre de Lausanne |date=avril 2023 |consulté le=17 octobre 2026}}.</ref>
+<ref name="bellan2024">{{Lien web |titre=Lauréats 2024 – 98{{e}} Concours international Léopold Bellan |url=http://concoursinternationalleopoldbellan.fr/LAUREATS2024.html |site=concoursinternationalleopoldbellan.fr |date=novembre 2024 |consulté le=17 octobre 2026}}.</ref>
+<ref name="schubertiade2025">{{Lien web |titre=Schubertiade RTS Espace 2 – Sion, 6 et 7 septembre 2025 : programme |url=https://www.bcvs.ch/fileadmin/user_upload/site/news-actualites/a-la-une/2025/schubertiade/SCHUB25_PROGRAMME_V4.pdf |format=pdf |site=bcvs.ch |date=2025 |consulté le=17 octobre 2026}}.</ref>
+<ref name="rts2025">{{Lien web |titre=Schubertiade RTS Espace 2 – Le programme |url=https://avecvous.rts.ch/dossiers/schubertiade-rts-espace-2/programmes/le-programme |site=avecvous.rts.ch |éditeur=Radio télévision suisse |date=2025 |consulté le=17 octobre 2026}}.</ref>
+<ref name="bandcamp">{{Lien web |titre=Impulsions – Merlin Breij Group |url=https://merlinbreij.bandcamp.com/album/impulsions |site=merlinbreij.bandcamp.com |date=2022 |consulté le=17 octobre 2026}}.</ref>
+<ref name="bellan2021">{{Lien web |titre=Lauréats 2021 – Concours international Léopold Bellan : palmarès musique de chambre |url=http://concoursinternationalleopoldbellan.fr/LAUREATS2021.html |site=concoursinternationalleopoldbellan.fr |date=2021 |consulté le=17 octobre 2026}}.</ref>
+<ref name="hemu2022b">{{Lien web |titre=L'art de la mélancolie passionnée – Une vision franco-belge qui bouscule le sens de l'harmonie |url=https://www.hemu.ch/agenda/agenda-details/wng-events/show/lart-de-la-m-lancolie-passionn-e-une-vision-franco-belge-qui-bouscule-le-sens-de-lharmonie-1828 |site=hemu.ch |éditeur=Haute École de musique de Lausanne |date=8 février 2022 |consulté le=17 octobre 2026}}.</ref>
+<ref name="rts2022">{{Lien web |auteur=Benoît Perrier |titre=Des Masters sur les ondes 2/5 |url=https://www.rts.ch/audio-podcast/2022/audio/des-masters-sur-les-ondes-2-5-25799788.html |site=rts.ch |éditeur=Radio télévision suisse, Espace 2 |date=8 février 2022 |consulté le=17 octobre 2026}}.</ref>
+<ref name="jazzmag2021">{{Lien web |titre=Nicolas Ziliotto remporte le Tremplin JazzContreBand |url=https://www.jazzmagazine.com/jazzlive/nicolas-ziliotto-remporte-le-tremplin-jazzcontreband/ |site=jazzmagazine.com |éditeur=[[Jazz Magazine]] |date=13 octobre 2021 |consulté le=17 octobre 2026}}.</ref>
+<ref name="spotify">{{Lien web |titre=Inner Chants – Nicolas Ziliotto |url=https://open.spotify.com/album/3EPbMFVDRY4KFgFhlRUV8H |site=open.spotify.com |date=28 avril 2022 |consulté le=17 octobre 2026}}.</ref>
+<ref name="cnsmd">{{Lien web |titre=Artist Diploma Konzertmeister |url=https://cnsmd-lyon.fr/?p=5548 |site=cnsmd-lyon.fr |éditeur=Conservatoire national supérieur de musique et de danse de Lyon |consulté le=17 octobre 2026}}.</ref>
+}}
+
+== Voir aussi ==
+=== Articles connexes ===
+* [[Concours international Léopold Bellan]]
+* [[Haute École de musique de Lausanne]]
+* [[Orchestre de chambre de Lausanne]]
+
+=== Liens externes ===
+<!-- {{Autres projets|commons=Category:Nina Ramousse Fuchs}} une fois une catégorie Commons créée. -->
+* {{Bases}}
+* [https://decarvalhoe.github.io/nina-ramousse/ Site officiel]
+* {{YouTube|Ch2eamALhcQ|Sonate de Franck par le duo Suonamare}}
+
+{{Portail|musique classique|jazz|Suisse|France}}
+
+[[Catégorie:Violoniste classique française]]
+[[Catégorie:Violoniste de jazz]]
+[[Catégorie:Élève du conservatoire à rayonnement régional de Strasbourg]]
+[[Catégorie:Naissance en 1998]]
+<!-- Ajouter [[Catégorie:Élève du Conservatoire national supérieur de musique et de danse de Lyon]] une fois le cursus sourcé. -->
+{{DEFAULTSORT:Ramousse Fuchs, Nina}}

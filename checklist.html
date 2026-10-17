@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checklist — Nina Ramousse Fuchs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fff; --bg:#efe9dd; --ink:#1d1b19; --muted:#5c554b; --faint:#a39a88;
+    --gold:#8a7a5c; --line:#b9ad95; --soft:#faf7f1;
+    --block:#b23a3a; --imp:#8a7a5c; --opt:#6f7f6a;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:Caladea,Georgia,serif;color:var(--ink);background:var(--bg);padding:28px 16px 64px;line-height:1.5}
+  .wrap{max-width:820px;margin:0 auto}
+  header{background:var(--paper);padding:34px 36px 26px;box-shadow:0 12px 40px rgba(60,45,20,.12)}
+  .kicker{font-family:Inter,sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:500}
+  h1{font-weight:normal;font-size:30px;line-height:1.1;margin:8px 0 4px}
+  .sub{font-style:italic;color:var(--muted);margin:0 0 18px}
+  .intro{font-size:15.5px;color:var(--muted);margin:0 0 16px}
+  .intro a{color:var(--gold)}
+  .progress{height:6px;background:#e9e2d4;border-radius:3px;overflow:hidden;margin:6px 0 4px}
+  .progress > div{height:100%;background:var(--gold);width:0;transition:width .3s}
+  .pstat{font-family:Inter,sans-serif;font-size:12px;color:var(--faint);display:flex;justify-content:space-between}
+  .legend{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px;font-family:Inter,sans-serif;font-size:12px;color:var(--muted)}
+  .legend span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+  .legend .b::before{background:var(--block)} .legend .i::before{background:var(--imp)} .legend .o::before{background:var(--opt)}
+  section{background:var(--paper);margin-top:14px;padding:22px 36px 14px;box-shadow:0 8px 30px rgba(60,45,20,.08)}
+  h2{font-weight:normal;font-size:21px;margin:0 0 4px;display:flex;justify-content:space-between;align-items:baseline}
+  h2 small{font-family:Inter,sans-serif;font-size:11.5px;color:var(--faint);letter-spacing:.06em}
+  .lead{color:var(--muted);font-size:14.5px;margin:0 0 10px}
+  .item{border-top:1px solid #ece6da;padding:13px 0 12px}
+  .item:first-of-type{border-top:0}
+  .row{display:flex;gap:12px;align-items:flex-start}
+  .row input[type=checkbox]{appearance:none;width:22px;height:22px;flex:0 0 22px;margin-top:2px;border:1.5px solid var(--line);border-radius:4px;background:#fff;cursor:pointer;position:relative}
+  .row input[type=checkbox]:checked{background:var(--gold);border-color:var(--gold)}
+  .row input[type=checkbox]:checked::after{content:"";position:absolute;left:7px;top:3px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+  .row label{flex:1;cursor:pointer}
+  .title{font-size:16.5px}
+  .item.done .title{color:var(--faint);text-decoration:line-through}
+  .tag{font-family:Inter,sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:2px 7px;border-radius:3px;color:#fff;margin-left:6px;vertical-align:2px;white-space:nowrap}
+  .tag.b{background:var(--block)} .tag.i{background:var(--imp)} .tag.o{background:var(--opt)}
+  .why{color:var(--muted);font-size:14px;margin:3px 0 0}
+  .why a{color:var(--gold)}
+  .note{display:block;width:100%;margin:8px 0 0;font-family:Inter,sans-serif;font-size:13px;padding:7px 9px;border:1px solid #e3dccd;border-radius:4px;background:var(--soft);resize:vertical;min-height:34px;color:var(--ink)}
+  .note:focus{outline:2px solid #d9cfb8;border-color:var(--line)}
+  .toolbar{background:var(--paper);margin-top:14px;padding:18px 36px;box-shadow:0 8px 30px rgba(60,45,20,.08);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  button,.btn{font-family:Inter,sans-serif;font-size:13px;font-weight:500;padding:10px 14px;border-radius:4px;border:1px solid var(--gold);background:var(--gold);color:#fff;cursor:pointer;text-decoration:none}
+  button.ghost,.btn.ghost{background:transparent;color:var(--gold)}
+  button:hover,.btn:hover{filter:brightness(.95)}
+  .toast{font-family:Inter,sans-serif;font-size:12.5px;color:var(--muted);margin-left:auto}
+  footer{text-align:center;font-family:Inter,sans-serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-top:26px}
+  @media (max-width:560px){
+    body{padding:0 0 48px;background:#fff}
+    header,section,.toolbar{padding-left:20px;padding-right:20px;box-shadow:none;margin-top:0;border-top:1px solid #ece6da}
+    h1{font-size:25px}
+    .toolbar{position:sticky;bottom:0;border-top:1px solid #ece6da;box-shadow:0 -6px 20px rgba(60,45,20,.08)}
+    .toast{width:100%;margin:0}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">À valider</div>
+    <h1>Checklist — biographie &amp; Wikipédia</h1>
+    <p class="sub">Nina Ramousse Fuchs · violon</p>
+    <p class="intro">Nina, chaque point ci-dessous attend soit ta confirmation, soit un document. Coche ce qui est bon, écris une correction ou une réponse dans la case en dessous quand il le faut, puis utilise <strong>« Copier le récapitulatif »</strong> tout en bas et envoie-le à Eric. Tes cases sont mémorisées sur cet appareil ; tu peux revenir plus tard.</p>
+    <p class="intro">Documents concernés : la <a href="index.html">bio en ligne</a> (et son <a href="Biographie_Nina_Ramousse_Fuchs.pdf">PDF</a>) et le <a href="https://fr.wikipedia.org/wiki/Utilisateur:Eric_DCa/Nina_Ramousse_Fuchs" target="_blank" rel="noopener">brouillon Wikipédia</a>.</p>
+    <div class="progress"><div id="bar"></div></div>
+    <div class="pstat"><span id="pct">0 % fait</span><span id="count"></span></div>
+    <div class="legend"><span class="b">Bloquant pour Wikipédia</span><span class="i">Important</span><span class="o">Optionnel</span></div>
+  </header>
+
+  <section data-sec="Texte de la bio">
+    <h2>1. Le texte de la bio <small>relecture</small></h2>
+    <p class="lead">Ce texte sert à la fois au PDF, au site et à l'article Wikipédia.</p>
+
+    <div class="item" data-id="t1" data-p="i">
+      <div class="row"><input type="checkbox" id="t1"><label for="t1"><span class="title">Le nom officiel est bien « Nina Ramousse Fuchs », partout et désormais</span><span class="tag i">Important</span>
+      <p class="why">Les sources publiques disent « Nina Ramousse » (Bellan, OCL, Pully), « Nina Ramousse-Fuchs » (HEMU) ou « Nina Fuchs Ramousse » (RTS) et même « Nina Fuchs » (Jazz Magazine). Wikipédia retiendra le nom le plus utilisé : si tu veux « Ramousse Fuchs », il faut l'utiliser sur tous tes programmes et profils à partir de maintenant.</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="t2" data-p="i">
+      <div class="row"><input type="checkbox" id="t2"><label for="t2"><span class="title">La première phrase : « Née en 1998 d'une famille musicienne… »</span><span class="tag i">Important</span>
+      <p class="why">Indique si tu veux aussi mentionner la méthode Suzuki et Micheline Delage (la bio du WEMP 2025 cite Suzuki, la tienne cite Micheline Delage).</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="t3" data-p="i">
+      <div class="row"><input type="checkbox" id="t3"><label for="t3"><span class="title">Tous les noms propres sont justes</span><span class="tag i">Important</span>
+      <p class="why">À vérifier en particulier : Hedy Kerpitchian, Alexis Galperine, François Sochard, Pilar Benavides Campini, Nicolas Ziliotto, Merlin Breij, Guillaume Chilemme (le vocal disait « Chilem »), Marc Danel, Sinfonieorchester Basel (et non « der Basel »), Camerata Ataremac, Orchestre Nexus.</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="t4" data-p="b">
+      <div class="row"><input type="checkbox" id="t4"><label for="t4"><span class="title">Le trio s'écrit « Ilargia » (un seul l) et le prix date de 2021</span><span class="tag b">Bloquant</span>
+      <p class="why">Ta bio écrit « Illargia » ; le palmarès officiel du Concours Léopold Bellan 2021 écrit « Trio Ilargia », deuxième prix de musique de chambre (édition en ligne). Confirme l'orthographe que le trio utilisait, et que tes partenaires étaient bien Manon Édouard-Dourioud (piano) et Maiana Lavielle (violoncelle).</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="t5" data-p="i">
+      <div class="row"><input type="checkbox" id="t5"><label for="t5"><span class="title">L'encadré « Actualité » (CNSMD de Lyon, Marc Danel, ONAuRA, avril 2027) est exact</span><span class="tag i">Important</span>
+      <p class="why">Intitulé retenu : « Artist Diploma “violon solo” (Konzertmeister) », cursus d'un an en partenariat avec l'Orchestre national Auvergne-Rhône-Alpes. Confirme le nom exact de ton cursus et la date du concert en soliste (jour, lieu, œuvre si déjà connue).</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="t6" data-p="o">
+      <div class="row"><input type="checkbox" id="t6"><label for="t6"><span class="title">Le ton général et l'ordre des paragraphes te conviennent</span><span class="tag o">Optionnel</span>
+      <p class="why">Si tu préfères que l'actualité soit fondue dans le texte plutôt qu'en encadré, dis-le.</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+  </section>
+
+  <section data-sec="Faits à confirmer">
+    <h2>2. Faits à confirmer <small>oui / non / précision</small></h2>
+    <p class="lead">Chaque fait de l'article Wikipédia doit être vrai <em>et</em> vérifiable. Dis-nous ce qui est inexact.</p>
+
+    <div class="item" data-id="f1" data-p="i">
+      <div class="row"><input type="checkbox" id="f1"><label for="f1"><span class="title">HEMU 2018 → 2023, master de musicien d'orchestre</span><span class="tag i">Important</span>
+      <p class="why">Source : HEMU (octobre 2022, « 2e année de master Musicien d'orchestre ») et WEMP 2025 (« cinq ans à partir de 2018 »). Précise l'année exacte du diplôme et son intitulé.</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="f2" data-p="i">
+      <div class="row"><input type="checkbox" id="f2"><label for="f2"><span class="title">Stage au Sinfonieorchester Basel, saison 2021-2022</span><span class="tag i">Important</span>
+      <p class="why">Source : bio WEMP 2025. Était-ce une académie / un stage d'orchestre officiel ? Une attestation ou une page de l'orchestre existe-t-elle ?</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="f3" data-p="i">
+      <div class="row"><input type="checkbox" id="f3"><label for="f3"><span class="title">Concert RTS Espace 2 du 8 février 2022 (Franck, Lekeu) — diffusé en direct</span><span class="tag i">Important</span>
+      <p class="why">Source : page rts.ch « Des Masters sur les ondes 2/5 ». As-tu le lien d'écoute ou l'enregistrement ? D'autres passages radio (RTS, France Musique, Accent 4…) ?</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="f4" data-p="i">
+      <div class="row"><input type="checkbox" id="f4"><label for="f4"><span class="title">Schubertiade de Sion, 6 septembre 2025 : heure, lieu, programme</span><span class="tag i">Important</span>
+      <p class="why">Le programme officiel mentionne le duo Suonamare (Casals, de Abreu, Gutiérrez, Ochoa, Schubert, Ernst) sans heure ni salle lisibles. Le concert a-t-il été diffusé sur Espace 2 ? Y a-t-il eu un article (Le Nouvelliste, Rhône FM…) ?</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="f5" data-p="i">
+      <div class="row"><input type="checkbox" id="f5"><label for="f5"><span class="title">Concours Léopold Bellan 2024 : second prix, mention spéciale pour Franck, invitation masterclass Dora Schwarzberg (Vienne)</span><span class="tag i">Important</span>
+      <p class="why">Tout cela figure sur le palmarès officiel. La masterclass a-t-elle eu lieu ? Quand ?</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="f6" data-p="i">
+      <div class="row"><input type="checkbox" id="f6"><label for="f6"><span class="title">Album <em>Inner Chants</em> (Nicolas Ziliotto, avril 2022) : label, ton rôle, formation exacte</span><span class="tag i">Important</span>
+      <p class="why">Spotify donne la date mais aucun crédit. Nom exact de la formation (« Trio & Strings » ? « Trio & String Quartet » ?), label, et une page où figurent les crédits (Bandcamp, livret, site de Nicolas).</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="f7" data-p="i">
+      <div class="row"><input type="checkbox" id="f7"><label for="f7"><span class="title">Tremplin JazzContreBand, 10 octobre 2021 (Plan-les-Ouates) : tu étais bien dans la formation gagnante</span><span class="tag i">Important</span>
+      <p class="why">Jazz Magazine cite « Nina Fuchs (violon) ». Confirme que c'est toi.</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="f8" data-p="o">
+      <div class="row"><input type="checkbox" id="f8"><label for="f8"><span class="title">Cully Jazz Festival : année(s) et formation</span><span class="tag o">Optionnel</span>
+      <p class="why">Un lien vers le programme du festival suffirait.</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="f9" data-p="o">
+      <div class="row"><input type="checkbox" id="f9"><label for="f9"><span class="title">Concerts du Cœur fribourgeois : depuis 2023, avec le duo Suonamare</span><span class="tag o">Optionnel</span>
+      <p class="why">Une page de l'association ou un programme qui vous nomme ?</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+
+    <div class="item" data-id="f10" data-p="o">
+      <div class="row"><input type="checkbox" id="f10"><label for="f10"><span class="title">Autres orchestres (Sinfonietta de Lausanne, Orchestre Nexus, Camerata Ataremac) : dates et programmes</span><span class="tag o">Optionnel</span>
+      <p class="why">Ils sont dans ta bio mais pas encore sourcés pour Wikipédia. Un programme de salle par orchestre suffit.</p></label></div>
+      <textarea class="note" placeholder="Remarque, correction…"></textarea>
+    </div>
+  </section>
+
+  <section data-sec="Documents à fournir">
+    <h2>3. Documents à nous transmettre <small>photos de programmes acceptées</small></h2>
+    <p class="lead">Ce sont les pièces qui manquent pour sourcer l'article. Envoie des liens de préférence, sinon des scans ou photos.</p>
+
+    <div class="item" data-id="d1" data-p="b">
+      <div class="row"><input type="checkbox" id="d1"><label for="d1"><span class="title">Une preuve publiée de ton inscription à l'Artist Diploma du CNSMD de Lyon (2026-2027)</span><span class="tag b">Bloquant</span>
+      <p class="why">Aucune page publique ne te nomme encore. Options : brochure de saison 26/27 de l'ONAuRA, actualité du CNSMD, liste des étudiants, programme d'un concert où tu es annoncée comme Artist Diploma. Sans ça, toute la partie « actualité » reste hors de Wikipédia.</p></label></div>
+      <textarea class="note" placeholder="Lien ou description du document…"></textarea>
+    </div>
+
+    <div class="item" data-id="d2" data-p="b">
+      <div class="row"><input type="checkbox" id="d2"><label for="d2"><span class="title">Annonce officielle du concert en soliste avec l'Orchestre national Auvergne-Rhône-Alpes (avril 2027)</span><span class="tag b">Bloquant</span>
+      <p class="why">Dès que l'orchestre publie la date : lien vers la page du concert. C'est aussi le meilleur moment pour obtenir un article de presse (voir section 5).</p></label></div>
+      <textarea class="note" placeholder="Lien ou description du document…"></textarea>
+    </div>
+
+    <div class="item" data-id="d3" data-p="b">
+      <div class="row"><input type="checkbox" id="d3"><label for="d3"><span class="title">Tout article de presse déjà paru sur toi ou sur le duo Suonamare</span><span class="tag b">Bloquant</span>
+      <p class="why">Même ancien, même régional : DNA (Strasbourg), Le Nouvelliste, La Liberté, 24 heures, Le Temps, Jazz'n'more, un portrait d'école… C'est le critère n°1 de Wikipédia et c'est ce qui manque le plus. Titre, date, journal, lien si possible.</p></label></div>
+      <textarea class="note" placeholder="Lien ou description du document…"></textarea>
+    </div>
+
+    <div class="item" data-id="d4" data-p="i">
+      <div class="row"><input type="checkbox" id="d4"><label for="d4"><span class="title">Programmes de salle où ton nom figure (OCL, Sinfonietta, Nexus, Ataremac, récitals du duo)</span><span class="tag i">Important</span>
+      <p class="why">Photos de programmes acceptées ; les PDF en ligne sont encore mieux.</p></label></div>
+      <textarea class="note" placeholder="Lien ou description du document…"></textarea>
+    </div>
+
+    <div class="item" data-id="d5" data-p="i">
+      <div class="row"><input type="checkbox" id="d5"><label for="d5"><span class="title">Crédits des deux albums (livret ou page Bandcamp) : <em>Inner Chants</em> et <em>Impulsions</em></span><span class="tag i">Important</span>
+      <p class="why">Pour <em>Impulsions</em> on a déjà l'actualité HEMU et Bandcamp ; pour <em>Inner Chants</em> il manque tout.</p></label></div>
+      <textarea class="note" placeholder="Lien ou description du document…"></textarea>
+    </div>
+
+    <div class="item" data-id="d6" data-p="o">
+      <div class="row"><input type="checkbox" id="d6"><label for="d6"><span class="title">Diplômes : DEM 2016 (CRR Strasbourg), master HEMU</span><span class="tag o">Optionnel</span>
+      <p class="why">Pas publiables sur Wikipédia, mais utiles pour que nous soyons sûrs des intitulés et des années.</p></label></div>
+      <textarea class="note" placeholder="Lien ou description du document…"></textarea>
+    </div>
+  </section>
+
+  <section data-sec="Photo et audio">
+    <h2>4. Photo et extrait audio <small>droits d'auteur</small></h2>
+    <p class="lead">Wikipédia n'accepte que des fichiers sous licence libre (CC BY-SA 4.0), déposés sur Wikimedia Commons <strong>par la personne qui détient les droits</strong>. Une photo « trouvée » ou envoyée par toi au nom du photographe sera supprimée.</p>
+
+    <div class="item" data-id="m1" data-p="i">
+      <div class="row"><input type="checkbox" id="m1"><label for="m1"><span class="title">Une photo portrait : nom du photographe et son accord pour une licence CC BY-SA 4.0</span><span class="tag i">Important</span>
+      <p class="why">Deux voies : (a) le photographe crée un compte sur commons.wikimedia.org et téléverse lui-même la photo en choisissant « CC BY-SA 4.0 » ; (b) il nous envoie la photo en haute définition et un courriel d'autorisation — nous passerons par le formulaire VRT de Commons. Si c'est un autoportrait ou une photo prise par un proche qui cède ses droits, c'est plus simple. La licence CC BY-SA signifie que n'importe qui pourra réutiliser la photo en citant l'auteur : choisis une photo pour laquelle ça ne pose pas de problème.</p></label></div>
+      <textarea class="note" placeholder="Nom du photographe, année, accord obtenu ?"></textarea>
+    </div>
+
+    <div class="item" data-id="m2" data-p="o">
+      <div class="row"><input type="checkbox" id="m2"><label for="m2"><span class="title">Un extrait audio de 30 à 60 secondes (par ex. sonate de Franck, duo Suonamare)</span><span class="tag o">Optionnel</span>
+      <p class="why">Il faut l'accord de Pilar (co-interprète) et celui de la personne qui a réalisé l'enregistrement. Même licence, même dépôt sur Commons. C'est l'élément le plus marquant qu'on puisse ajouter à l'article d'une musicienne.</p></label></div>
+      <textarea class="note" placeholder="Quel enregistrement ? Accords de Pilar et du preneur de son ?"></textarea>
+    </div>
+
+    <div class="item" data-id="m3" data-p="o">
+      <div class="row"><input type="checkbox" id="m3"><label for="m3"><span class="title">La vidéo YouTube de la sonate de Franck peut rester en lien externe</span><span class="tag o">Optionnel</span>
+      <p class="why">Elle est mise en lien (pas intégrée). Si tu préfères une autre vidéo, donne le lien.</p></label></div>
+      <textarea class="note" placeholder="Remarque…"></textarea>
+    </div>
+  </section>
+
+  <section data-sec="Décisions">
+    <h2>5. Décisions à prendre <small>ton choix</small></h2>
+
+    <div class="item" data-id="c1" data-p="i">
+      <div class="row"><input type="checkbox" id="c1"><label for="c1"><span class="title">Titre de l'article : « Nina Ramousse Fuchs » (avec redirections depuis « Nina Ramousse »)</span><span class="tag i">Important</span>
+      <p class="why">Un relecteur peut renommer vers la forme la plus courante dans les sources. Voir le point 1.1.</p></label></div>
+      <textarea class="note" placeholder="OK / autre choix…"></textarea>
+    </div>
+
+    <div class="item" data-id="c2" data-p="i">
+      <div class="row"><input type="checkbox" id="c2"><label for="c2"><span class="title">Données personnelles : on indique seulement l'année de naissance (1998), pas de lieu ni de date complète</span><span class="tag i">Important</span>
+      <p class="why">Wikipédia permet de rester à l'année. Dis-nous si tu veux ajouter le lieu de naissance (il faudra une source publiée) ou au contraire rester plus discrète.</p></label></div>
+      <textarea class="note" placeholder="OK / autre choix…"></textarea>
+    </div>
+
+    <div class="item" data-id="c3" data-p="o">
+      <div class="row"><input type="checkbox" id="c3"><label for="c3"><span class="title">« Site officiel » = la bio en ligne (decarvalhoe.github.io/nina-ramousse)</span><span class="tag o">Optionnel</span>
+      <p class="why">Si tu as ou prévois un vrai site / nom de domaine, on le remplacera.</p></label></div>
+      <textarea class="note" placeholder="OK / autre adresse…"></textarea>
+    </div>
+
+    <div class="item" data-id="c4" data-p="b">
+      <div class="row"><input type="checkbox" id="c4"><label for="c4"><span class="title">Tu es d'accord pour qu'un article Wikipédia existe sur toi</span><span class="tag b">Bloquant</span>
+      <p class="why">Une fois publié, l'article ne t'appartient pas : n'importe qui peut le modifier, et il ne pourra être supprimé à ta demande que dans des cas limités. Les informations qui y figurent doivent toutes être publiques et sourcées.</p></label></div>
+      <textarea class="note" placeholder="Oui / non / réserves…"></textarea>
+    </div>
+  </section>
+
+  <section data-sec="Pour la presse">
+    <h2>6. Obtenir des articles de presse <small>le vrai déblocage</small></h2>
+    <p class="lead">Aujourd'hui, Wikipédia dirait « notoriété insuffisante ». Il faut idéalement deux articles de fond sur toi, dans des médias reconnus, espacés d'au moins deux ans. Ce que tu peux déclencher :</p>
+
+    <div class="item" data-id="p1" data-p="i">
+      <div class="row"><input type="checkbox" id="p1"><label for="p1"><span class="title">Demander au service communication de l'ONAuRA / du CNSMD un portrait ou un communiqué autour de l'Artist Diploma</span><span class="tag i">Important</span>
+      <p class="why">Cursus « unique en Europe », une violoniste formée en Suisse : c'est un angle pour La Montagne, Le Progrès, France 3 Auvergne, ResMusica, Diapason.</p></label></div>
+      <textarea class="note" placeholder="Fait le… / réponse…"></textarea>
+    </div>
+
+    <div class="item" data-id="p2" data-p="i">
+      <div class="row"><input type="checkbox" id="p2"><label for="p2"><span class="title">Côté suisse : proposer un sujet à la RTS (Espace 2) ou à 24 heures / Le Temps avant le concert d'avril 2027</span><span class="tag i">Important</span>
+      <p class="why">Ancienne de l'HEMU et de l'OCL devenue Konzertmeister-stagiaire d'un orchestre national français : angle « talent romand ».</p></label></div>
+      <textarea class="note" placeholder="Fait le… / réponse…"></textarea>
+    </div>
+
+    <div class="item" data-id="p3" data-p="o">
+      <div class="row"><input type="checkbox" id="p3"><label for="p3"><span class="title">Côté Strasbourg : les DNA aiment les « enfants du pays »</span><span class="tag o">Optionnel</span>
+      <p class="why">Un article à Strasbourg + un en Auvergne + la RTS = base solide.</p></label></div>
+      <textarea class="note" placeholder="Fait le… / réponse…"></textarea>
+    </div>
+  </section>
+
+  <div class="toolbar">
+    <button id="copy">Copier le récapitulatif</button>
+    <a id="wa" class="btn ghost" href="#" target="_blank" rel="noopener">Envoyer par WhatsApp</a>
+    <button id="reset" class="ghost">Tout réinitialiser</button>
+    <span class="toast" id="toast"></span>
+  </div>
+
+  <footer>Nina Ramousse Fuchs · checklist · mise à jour 17 octobre 2026</footer>
+</div>
+
+<script>
+(function(){
+  const KEY='nrf-checklist-v1';
+  let state={};
+  try{ state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ state={}; }
+  const items=[...document.querySelectorAll('.item')];
+  function save(){ try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){} }
+  function render(){
+    let done=0;
+    items.forEach(it=>{
+      const id=it.dataset.id, cb=it.querySelector('input[type=checkbox]'), note=it.querySelector('.note');
+      const s=state[id]||{};
+      cb.checked=!!s.done; note.value=s.note||'';
+      it.classList.toggle('done',!!s.done);
+      if(s.done) done++;
+    });
+    const pct=Math.round(100*done/items.length);
+    document.getElementById('bar').style.width=pct+'%';
+    document.getElementById('pct').textContent=pct+' % fait';
+    document.getElementById('count').textContent=done+' / '+items.length+' points';
+    updateWa();
+  }
+  items.forEach(it=>{
+    const id=it.dataset.id;
+    it.querySelector('input[type=checkbox]').addEventListener('change',e=>{ state[id]=Object.assign({},state[id],{done:e.target.checked}); save(); render(); });
+    it.querySelector('.note').addEventListener('input',e=>{ state[id]=Object.assign({},state[id],{note:e.target.value}); save(); updateWa(); });
+  });
+  function summary(){
+    const lines=['Checklist bio / Wikipédia — Nina Ramousse Fuchs','Récapitulatif du '+new Date().toLocaleDateString('fr-CH'),''];
+    document.querySelectorAll('section').forEach(sec=>{
+      lines.push('## '+sec.dataset.sec);
+      sec.querySelectorAll('.item').forEach(it=>{
+        const s=state[it.dataset.id]||{};
+        const title=it.querySelector('.title').textContent.trim();
+        const p={b:'bloquant',i:'important',o:'optionnel'}[it.dataset.p];
+        lines.push((s.done?'✅ ':'⬜ ')+title+' ('+p+')');
+        if(s.note&&s.note.trim()) lines.push('   → '+s.note.trim().replace(/\n/g,'\n     '));
+      });
+      lines.push('');
+    });
+    return lines.join('\n');
+  }
+  function updateWa(){
+    const t=summary();
+    document.getElementById('wa').href='https://wa.me/?text='+encodeURIComponent(t.length>3500?t.slice(0,3500)+'\n…(suite copiée à part)':t);
+  }
+  function toast(msg){ const el=document.getElementById('toast'); el.textContent=msg; setTimeout(()=>{ if(el.textContent===msg) el.textContent=''; },4000); }
+  document.getElementById('copy').addEventListener('click',async()=>{
+    const t=summary();
+    try{ await navigator.clipboard.writeText(t); toast('Récapitulatif copié — colle-le dans un message à Eric.'); }
+    catch(e){ const ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy'); toast('Récapitulatif copié.');}catch(_){ toast('Copie impossible : sélectionne le texte manuellement.'); } ta.remove(); }
+  });
+  document.getElementById('reset').addEventListener('click',()=>{ if(confirm('Effacer toutes les cases et remarques sur cet appareil ?')){ state={}; save(); render(); } });
+  render();
+})();
+</script>
+</body>
+</html>

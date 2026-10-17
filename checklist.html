@@ -48,6 +48,10 @@
   .why a{color:var(--gold)}
   .note{display:block;width:100%;margin:8px 0 0;font-family:Inter,sans-serif;font-size:13px;padding:7px 9px;border:1px solid #e3dccd;border-radius:4px;background:var(--soft);resize:vertical;min-height:34px;color:var(--ink)}
   .note:focus{outline:2px solid #d9cfb8;border-color:var(--line)}
+  .received{margin:8px 0 0;padding:8px 10px;border-left:3px solid #6fa865;background:#f1f7ee;font-size:13.5px;color:#36502f}
+  .received b{font-family:Inter,sans-serif;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:2px;color:#4f7a44}
+  .resume{font-family:Inter,sans-serif;font-size:12px;color:var(--faint);margin:10px 0 0}
+  .resume a{color:var(--gold)}
   .toolbar{background:var(--paper);margin-top:14px;padding:18px 36px;box-shadow:0 8px 30px rgba(60,45,20,.08);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
   button,.btn{font-family:Inter,sans-serif;font-size:13px;font-weight:500;padding:10px 14px;border-radius:4px;border:1px solid var(--gold);background:var(--gold);color:#fff;cursor:pointer;text-decoration:none}
   button.ghost,.btn.ghost{background:transparent;color:var(--gold)}
@@ -69,7 +73,7 @@
     <div class="kicker">À valider</div>
     <h1>Checklist — biographie &amp; Wikipédia</h1>
     <p class="sub">Nina Ramousse Fuchs · violon</p>
-    <p class="intro">Nina, chaque point ci-dessous attend soit ta confirmation, soit un document. Coche ce qui est bon, écris une correction ou une réponse dans la case en dessous quand il le faut, puis utilise <strong>« Copier le récapitulatif »</strong> tout en bas et envoie-le à Eric. Tes cases sont mémorisées sur cet appareil ; tu peux revenir plus tard.</p>
+    <p class="intro">Nina, chaque point ci-dessous attend soit ta confirmation, soit un document. Coche ce qui est bon, écris une correction ou une réponse dans la case en dessous quand il le faut, puis utilise <strong>« Envoyer à Eric »</strong> tout en bas quand tu veux transmettre un lot de réponses. Tout est enregistré automatiquement au fur et à mesure : rien à sauvegarder. Les réponses déjà transmises apparaissent en vert.</p>
     <p class="intro">Documents concernés : la <a href="index.html">bio en ligne</a> (et son <a href="Biographie_Nina_Ramousse_Fuchs.pdf">PDF</a>) et le <a href="https://fr.wikipedia.org/wiki/Utilisateur:Eric_DCa/Nina_Ramousse_Fuchs" target="_blank" rel="noopener">brouillon Wikipédia</a>.</p>
     <div class="progress"><div id="bar"></div></div>
     <div class="pstat"><span id="pct">0 % fait</span><span id="count"></span></div>
@@ -105,7 +109,7 @@
     </div>
 
     <div class="item" data-id="t5" data-p="i">
-      <div class="row"><input type="checkbox" id="t5"><label for="t5"><span class="title">L'encadré « Actualité » (CNSMD de Lyon, Marc Danel, ONAuRA, avril 2027) est exact</span><span class="tag i">Important</span>
+      <div class="row"><input type="checkbox" id="t5"><label for="t5"><span class="title">L'encadré « Actualité » (CNSMD de Lyon, Marc Danel, ONAuRA, concerts en soliste les 1<sup>er</sup> et 2 avril 2027) est exact</span><span class="tag i">Important</span>
       <p class="why">Intitulé retenu : « Artist Diploma “violon solo” (Konzertmeister) », cursus d'un an en partenariat avec l'Orchestre national Auvergne-Rhône-Alpes. Confirme le nom exact de ton cursus et la date du concert en soliste (jour, lieu, œuvre si déjà connue).</p></label></div>
       <textarea class="note" placeholder="Remarque, correction…"></textarea>
     </div>
@@ -122,14 +126,14 @@
     <p class="lead">Chaque fait de l'article Wikipédia doit être vrai <em>et</em> vérifiable. Dis-nous ce qui est inexact.</p>
 
     <div class="item" data-id="f1" data-p="i">
-      <div class="row"><input type="checkbox" id="f1"><label for="f1"><span class="title">HEMU 2018 → 2023, master de musicien d'orchestre</span><span class="tag i">Important</span>
-      <p class="why">Source : HEMU (octobre 2022, « 2e année de master Musicien d'orchestre ») et WEMP 2025 (« cinq ans à partir de 2018 »). Précise l'année exacte du diplôme et son intitulé.</p></label></div>
+      <div class="row"><input type="checkbox" id="f1"><label for="f1"><span class="title">HEMU 2018 → 2024, master d'orchestre HES-SO</span><span class="tag i">Important</span>
+      <p class="why">Corrigé selon ta réponse : diplôme en 2024, intitulé « master d'orchestre HES-SO ». Si tu retrouves l'intitulé exact figurant sur le diplôme (p. ex. « Master of Arts HES-SO en interprétation musicale, orientation musicien d'orchestre »), note-le ici.</p></label></div>
       <textarea class="note" placeholder="Remarque, correction…"></textarea>
     </div>
 
     <div class="item" data-id="f2" data-p="i">
       <div class="row"><input type="checkbox" id="f2"><label for="f2"><span class="title">Stage au Sinfonieorchester Basel, saison 2021-2022</span><span class="tag i">Important</span>
-      <p class="why">Source : bio WEMP 2025. Était-ce une académie / un stage d'orchestre officiel ? Une attestation ou une page de l'orchestre existe-t-elle ?</p></label></div>
+      <p class="why">Confirmé : Praktikum, avec attestation. Une page de l'orchestre (liste des stagiaires de la saison) serait la source idéale pour Wikipédia ; sinon on garde la bio du WEMP.</p></label></div>
       <textarea class="note" placeholder="Remarque, correction…"></textarea>
     </div>
 
@@ -298,22 +302,46 @@
   </section>
 
   <div class="toolbar">
-    <button id="copy">Copier le récapitulatif</button>
-    <a id="wa" class="btn ghost" href="#" target="_blank" rel="noopener">Envoyer par WhatsApp</a>
+    <a id="wa" class="btn" href="#" target="_blank" rel="noopener">Envoyer à Eric (WhatsApp)</a>
+    <button id="copy" class="ghost">Copier le récapitulatif</button>
+    <button id="link" class="ghost">Copier mon lien de reprise</button>
     <button id="reset" class="ghost">Tout réinitialiser</button>
     <span class="toast" id="toast"></span>
   </div>
 
+  <p class="resume" style="text-align:center">Ton avancement est aussi inscrit dans l'adresse de cette page : si tu changes d'appareil, ouvre ton « lien de reprise » et tu retrouves tout.</p>
   <footer>Nina Ramousse Fuchs · checklist · mise à jour 17 octobre 2026</footer>
 </div>
 
 <script>
 (function(){
   const KEY='nrf-checklist-v1';
-  let state={};
-  try{ state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ state={}; }
+  // Réponses déjà transmises par Nina (intégrées à la page, visibles partout)
+  const RECEIVED={
+    t1:{d:'17.10.2026',t:'Le nom officiel est Nina Ramousse Fuchs.'},
+    t2:{d:'17.10.2026',t:'Je ne veux rien d’autre.'},
+    t3:{d:'17.10.2026',t:'Tout nickel.'},
+    t4:{d:'17.10.2026',t:'Oui, exactement, avec un seul L.'},
+    t5:{d:'17.10.2026',t:'Je confirme que tout est juste ; je me produirai en soliste avec l’Orchestre d’Auvergne-Rhône-Alpes les 1er et 2 avril 2027.'},
+    t6:{d:'17.10.2026',t:''},
+    f1:{d:'17.10.2026',t:'2024 est l’année de mon diplôme ; son intitulé est master d’orchestre HES-SO.'},
+    f2:{d:'17.10.2026',t:'Oui, c’est un stage (Praktikum en allemand) ; j’ai le diplôme.'}
+  };
   const items=[...document.querySelectorAll('.item')];
-  function save(){ try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){} }
+  // --- stockage : localStorage + IndexedDB + hash d'URL
+  let state={};
+  function readLocal(){ try{ return JSON.parse(localStorage.getItem(KEY)||'null'); }catch(e){ return null; } }
+  function writeLocal(){ try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){} }
+  function idb(){ return new Promise(res=>{ try{ const r=indexedDB.open('nrf-checklist',1); r.onupgradeneeded=()=>r.result.createObjectStore('kv'); r.onsuccess=()=>res(r.result); r.onerror=()=>res(null); }catch(e){ res(null);} }); }
+  async function readIdb(){ const d=await idb(); if(!d) return null; return new Promise(res=>{ try{ const q=d.transaction('kv').objectStore('kv').get(KEY); q.onsuccess=()=>res(q.result||null); q.onerror=()=>res(null);}catch(e){res(null);} }); }
+  async function writeIdb(){ const d=await idb(); if(!d) return; try{ d.transaction('kv','readwrite').objectStore('kv').put(JSON.parse(JSON.stringify(state)),KEY); }catch(e){} }
+  function enc(o){ try{ return btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,''); }catch(e){ return ''; } }
+  function dec(str){ try{ str=str.replace(/-/g,'+').replace(/_/g,'/'); while(str.length%4) str+='='; return JSON.parse(decodeURIComponent(escape(atob(str)))); }catch(e){ return null; } }
+  function readHash(){ const m=location.hash.match(/[#&]s=([^&]+)/); return m?dec(m[1]):null; }
+  function writeHash(){ try{ history.replaceState(null,'','#s='+enc(state)); }catch(e){} }
+  function resumeLink(){ return location.origin+location.pathname+'#s='+enc(state); }
+  function save(){ writeLocal(); writeIdb(); writeHash(); }
+  // --- rendu
   function render(){
     let done=0;
     items.forEach(it=>{
@@ -322,6 +350,12 @@
       cb.checked=!!s.done; note.value=s.note||'';
       it.classList.toggle('done',!!s.done);
       if(s.done) done++;
+      if(RECEIVED[id] && !it.querySelector('.received')){
+        const r=RECEIVED[id], div=document.createElement('div'); div.className='received';
+        div.innerHTML='<b>Réponse transmise le '+r.d+'</b>'+(r.t?r.t.replace(/</g,'&lt;'):'Validé.');
+        it.insertBefore(div, note);
+        note.placeholder='Complément éventuel…';
+      }
     });
     const pct=Math.round(100*done/items.length);
     document.getElementById('bar').style.width=pct+'%';
@@ -339,28 +373,38 @@
     document.querySelectorAll('section').forEach(sec=>{
       lines.push('## '+sec.dataset.sec);
       sec.querySelectorAll('.item').forEach(it=>{
-        const s=state[it.dataset.id]||{};
+        const id=it.dataset.id, s=state[id]||{};
         const title=it.querySelector('.title').textContent.trim();
         const p={b:'bloquant',i:'important',o:'optionnel'}[it.dataset.p];
-        lines.push((s.done?'✅ ':'⬜ ')+title+' ('+p+')');
+        const already=RECEIVED[id]?' [déjà transmis]':'';
+        lines.push((s.done?'✅ ':'⬜ ')+title+' ('+p+')'+already);
         if(s.note&&s.note.trim()) lines.push('   → '+s.note.trim().replace(/\n/g,'\n     '));
       });
       lines.push('');
     });
+    lines.push('Lien de reprise : '+resumeLink());
     return lines.join('\n');
   }
   function updateWa(){
     const t=summary();
-    document.getElementById('wa').href='https://wa.me/?text='+encodeURIComponent(t.length>3500?t.slice(0,3500)+'\n…(suite copiée à part)':t);
+    document.getElementById('wa').href='https://wa.me/?text='+encodeURIComponent(t.length>3500?t.slice(0,3300)+'\n…\nLien de reprise : '+resumeLink():t);
   }
   function toast(msg){ const el=document.getElementById('toast'); el.textContent=msg; setTimeout(()=>{ if(el.textContent===msg) el.textContent=''; },4000); }
-  document.getElementById('copy').addEventListener('click',async()=>{
-    const t=summary();
-    try{ await navigator.clipboard.writeText(t); toast('Récapitulatif copié — colle-le dans un message à Eric.'); }
-    catch(e){ const ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy'); toast('Récapitulatif copié.');}catch(_){ toast('Copie impossible : sélectionne le texte manuellement.'); } ta.remove(); }
-  });
-  document.getElementById('reset').addEventListener('click',()=>{ if(confirm('Effacer toutes les cases et remarques sur cet appareil ?')){ state={}; save(); render(); } });
-  render();
+  async function copyText(t,ok){
+    try{ await navigator.clipboard.writeText(t); toast(ok); }
+    catch(e){ const ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy'); toast(ok);}catch(_){ toast('Copie impossible : sélectionne le texte manuellement.'); } ta.remove(); }
+  }
+  document.getElementById('copy').addEventListener('click',()=>copyText(summary(),'Récapitulatif copié — colle-le dans un message à Eric.'));
+  document.getElementById('link').addEventListener('click',()=>copyText(resumeLink(),'Lien copié : envoie-le-toi pour reprendre sur un autre appareil.'));
+  document.getElementById('reset').addEventListener('click',()=>{ if(confirm('Effacer toutes les cases et remarques sur cet appareil ?')){ state={}; seedDefaults(); save(); render(); } });
+  function seedDefaults(){ Object.keys(RECEIVED).forEach(id=>{ if(!state[id]) state[id]={done:true}; }); }
+  // --- chargement : hash > localStorage > IndexedDB > défauts
+  (async function init(){
+    const h=readHash(); const l=readLocal(); const i=h||l?null:await readIdb();
+    state=(h&&typeof h==='object')?h:(l&&typeof l==='object')?l:(i&&typeof i==='object')?i:{};
+    seedDefaults();
+    render(); save();
+  })();
 })();
 </script>
 </body>

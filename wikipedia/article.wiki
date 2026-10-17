@@ -45,12 +45,12 @@ Redirections à créer : Nina Ramousse ; Nina Ramousse-Fuchs
 === Formation ===
 Nina Ramousse Fuchs naît en 1998 dans une famille de musiciens et commence le [[violon]] à l'âge de quatre ans selon la [[méthode Suzuki]]<ref name="wemp2025" />. Elle étudie au [[Conservatoire à rayonnement régional de Strasbourg]], où elle obtient son [[diplôme d'études musicales]] en 2016<ref name="wemp2025" />.
 
-À partir de 2018, elle poursuit pendant cinq ans sa formation à la [[Haute École de musique de Lausanne]] (HEMU) dans les classes de [[Renaud Capuçon]] et de François Sochard, où elle suit notamment un master de musicien d'orchestre<ref name="wemp2025" /><ref name="hemu2022" />.
+À partir de 2018, elle poursuit sa formation à la [[Haute École de musique de Lausanne]] (HEMU) dans les classes de [[Renaud Capuçon]] et de François Sochard<ref name="wemp2025" />, où elle suit un master en interprétation musicale, orientation musicien d'orchestre ([[Haute école spécialisée de Suisse occidentale|HES-SO]])<ref name="hemu2022" />, obtenu en 2024<!-- année confirmée par l'intéressée (diplôme non publiable) ; source publiée à trouver, p. ex. programme de la cérémonie de diplômes HEMU 2024 -->.
 
 <!-- À SOURCER : depuis septembre 2026, Artist Diploma « violon solo » (Konzertmeister)
 du [[Conservatoire national supérieur de musique et de danse de Lyon]], cursus d'un an
 en partenariat avec l'[[Orchestre national d'Auvergne]], classe de Marc Danel ;
-concert en soliste prévu en avril 2027. Le cursus est décrit sur le site du CNSMD
+concerts en soliste prévus les 1er et 2 avril 2027 (confirmé par l'intéressée). Le cursus est décrit sur le site du CNSMD
 (réf. « cnsmd ») mais l'inscription de l'artiste doit être attestée par une source publiée. -->
 
 === Carrière ===
@@ -112,7 +112,7 @@ BarData =
 PlotData =
   width:14 textcolor:black align:left fontsize:S shift:(4,-5)
   bar:strasbourg from:2002 till:2016 color:form text:"DEM 2016"
-  bar:hemu       from:2018 till:2023 color:form
+  bar:hemu       from:2018 till:2024 color:form text:"master 2024"
   bar:bale       from:2021 till:2022 color:orch text:"stage"
   bar:ilargia    at:2021 mark:(line,cham) color:cham text:"2e prix"
   bar:tremplin   at:2021 mark:(line,jazz) color:jazz text:"1er prix"
@@ -130,7 +130,7 @@ PlotData =
   "type": "FeatureCollection",
   "features": [
     {"type":"Feature","geometry":{"type":"Point","coordinates":[7.7521,48.5734]},"properties":{"title":"Strasbourg","description":"Conservatoire à rayonnement régional — diplôme d'études musicales, 2016.","marker-symbol":"music","marker-color":"#8a7a5c"}},
-    {"type":"Feature","geometry":{"type":"Point","coordinates":[6.6323,46.5197]},"properties":{"title":"Lausanne","description":"Haute École de musique (2018-2023) ; Orchestre de chambre de Lausanne ; scène jazz lausannoise.","marker-symbol":"music","marker-color":"#8a7a5c"}},
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[6.6323,46.5197]},"properties":{"title":"Lausanne","description":"Haute École de musique (2018-2024) ; Orchestre de chambre de Lausanne ; scène jazz lausannoise.","marker-symbol":"music","marker-color":"#8a7a5c"}},
     {"type":"Feature","geometry":{"type":"Point","coordinates":[7.5886,47.5596]},"properties":{"title":"Bâle","description":"Stage à l'Orchestre symphonique de Bâle, saison 2021-2022.","marker-symbol":"music","marker-color":"#5b8fb9"}},
     {"type":"Feature","geometry":{"type":"Point","coordinates":[7.3606,46.2333]},"properties":{"title":"Sion","description":"22e Schubertiade RTS Espace 2, 6-7 septembre 2025, duo Suonamare.","marker-symbol":"star","marker-color":"#6fa865"}},
     {"type":"Feature","geometry":{"type":"Point","coordinates":[2.2186,48.8440]},"properties":{"title":"Saint-Cloud","description":"98e Concours international Léopold Bellan, novembre 2024 — second prix de musique de chambre.","marker-symbol":"star","marker-color":"#6fa865"}},
@@ -141,7 +141,7 @@ PlotData =
   ]
 }
 </mapframe>
-<!-- À SOURCER puis ajouter : Lyon [4.8357,45.7640] (CNSMD, 2026-2027) et Clermont-Ferrand [3.0870,45.7772] (Orchestre national d'Auvergne, soliste avril 2027). -->
+<!-- À SOURCER puis ajouter : Lyon [4.8357,45.7640] (CNSMD, 2026-2027) et Clermont-Ferrand [3.0870,45.7772] (Orchestre national d'Auvergne, soliste les 1er et 2 avril 2027). -->
 
 == Principales apparitions ==
 {| class="wikitable sortable centre" style="font-size:95%"
